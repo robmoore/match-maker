@@ -36,5 +36,4 @@ I found [Laura Skelton's repo](https://github.com/lauraskelton/secrethandshake) 
 
    These values are pulled in to the client script with this line:
 
-		from secrets import client_id, client_secret, token
-
+		from secrets import client_id, client_secret, access_token, refresh_token
