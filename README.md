@@ -5,7 +5,7 @@ Finds HS pairing partners.
 
 # Getting started
 
-I found [Laura Skelton's repo](https://github.com/lauraskelton/secrethandshake) to be very helpful as I sought to understand the requirements of the HS API OAuth2 implementation.
+More so than the [HS wiki entry for the API](https://github.com/hackerschool/wiki/wiki/Hacker-School-API), I found [Laura Skelton's repo](https://github.com/lauraskelton/secrethandshake) to be very helpful as I sought to understand the requirements of the HS API OAuth2 implementation.
 
 1. From the [settings page](https://www.hackerschool.com/settings), add an OAuth application. See "Create an OAuth application" at the bottom of the page.
 
