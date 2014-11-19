@@ -27,13 +27,5 @@ More so than the [HS wiki entry for the API](https://github.com/hackerschool/wik
 
 		curl https://www.hackerschool.com/api/v1/people/me?access_token=<access_token_from_step_4>
 
-5. Create a file named `secrets.py` in the same directory as the client. It should have this format:
-
-		client_id = "<my_client_id>"
-		client_secret = "<my_secret_id>"
-		access_token = "<my_access_token>"
-		refresh_token = "<my_refresh_token>"
-
-   These values are pulled in to the client script with this line:
-
-		from secrets import client_id, client_secret, access_token, refresh_token
+5. Make a copy of comm-api-client.cfg-template and name it comm-api-client.cfg. Provide your `client_id`, `client_secret`, `access_token`, and `refresh_token` created above. You may leave the `expires_at` value. It will be updated on the first
+token refresh.
