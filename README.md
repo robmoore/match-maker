@@ -27,9 +27,8 @@ More so than the [HS wiki entry for the API](https://github.com/hackerschool/wik
 
 		curl https://www.hackerschool.com/api/v1/people/me?access_token=<access_token_from_step_4>
 
-5. Make a copy of comm-api-client.cfg-template and name it comm-api-client.cfg. Provide your `client_id`, `client_secret`, `access_token`, and `refresh_token` created above. You may leave the `expires_at` value. It will be updated on the first
-token refresh.
+5. Make a copy of request_helper.cfg-template and name it request_helper.cfg. Create a segment (`[www.hackerschool.com]`, for example) for your host. Underneath provide your `client_id`, `client_secret`, `access_token`, and `refresh_token` created above. You may leave the `expires_at` value. It will be updated on the first token refresh.
 
-*Note:* The Community API only allows refresh tokens to be used once. When you request a new access token using
-the refresh token, a new refresh token will be returned. The new refresh token must be used to make the next
-request for a new access token. That is, refresh tokens expire once they are used.
+*Note:* The Community API only allows refresh tokens to be used once. When you request a new 
+access token using the refresh token, a new refresh token will be returned. The new refresh token
+must be used to make the next request for a new access token. That is, refresh tokens expire once they are used.
