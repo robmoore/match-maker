@@ -72,10 +72,7 @@ class RequestHelper(object):
       config.write(configfile)
 
   def issue_request(self, path):
-    # Attempting to force refresh in every instance. We could store now() + 7200 whenever we get a new access token
-    # and use this value to express the expiration but we'd need to store it somewhere.
-
-    extra = {
+     extra = {
       'client_id': self.config['client_id'],
       'client_secret': self.config['client_secret']
     }
