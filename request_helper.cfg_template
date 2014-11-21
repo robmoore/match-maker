@@ -1,7 +1,7 @@
 [www.hackerschool.com]
-client_id = 
-client_secret = 
-access_token = 
-refresh_token = 
+client_id = <your_value_here>
+client_secret = <your_value_here>
+access_token = <your_value_here>
+refresh_token = <your_value_here>
 expires_at = 0
 

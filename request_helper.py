@@ -24,7 +24,7 @@ import ConfigParser
 # expires_at = 0
 
 class RequestHelper(object):
-  config_file = 'RequestHelper.cfg'
+  config_file = 'request_helper.cfg'
 
   def __init__(self, refresh_url, base_url):
     self.refresh_url = refresh_url

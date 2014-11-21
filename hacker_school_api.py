@@ -37,5 +37,3 @@ if __name__ == '__main__':
   hs_api = HackerSchoolAPI()
   response = hs_api.find_active_batches()
   print response
-  response = hs_api.find_user_by_email('rob.moore@gmail.com')
-  print response
