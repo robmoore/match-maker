@@ -33,7 +33,10 @@ class HackerSchoolAPI(object):
     # TODO: What happens if people is empty?
     return [person for person in people if person['email'] == email][0]
 
+  def find_me(self):
+    return self.rh.issue_request("/people/me")
+
 if __name__ == '__main__':
   hs_api = HackerSchoolAPI()
-  response = hs_api.find_active_batches()
+  response = hs_api.find_me()
   print response
