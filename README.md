@@ -23,11 +23,11 @@ More so than the [HS wiki entry for the API](https://github.com/hackerschool/wik
 
 		curl -X POST https://www.hackerschool.com/oauth/token -d "grant_type=authorization_code&redirect_uri=urn:ietf:wg:oauth:2.0:oob&code=<code_from_step_3>&client_id=<my_client_id>&client_secret=<my_client_secret>"
 
-   This request will return JSON containing your access token and refresh token. Use can test this by issuing:
+   This request will return JSON containing your access token and refresh token. You can test this by issuing:
 
 		curl https://www.hackerschool.com/api/v1/people/me?access_token=<access_token_from_step_4>
 
-5. Make a copy of request_helper.cfg-template and name it request_helper.cfg. Create a segment (`[www.hackerschool.com]`, for example) for your host. Underneath provide your `client_id`, `client_secret`, `access_token`, and `refresh_token` created above. You may leave the `expires_at` value. It will be updated on the first token refresh.
+5. Make a copy of request_helper.cfg_template and name it request_helper.cfg. Create a segment (`[www.hackerschool.com]`, for example) for your host. Underneath that provide your `client_id`, `client_secret`, `access_token`, and `refresh_token` created above. You may leave the `expires_at` value. It will be updated on the first token refresh.
 
 *Note:* The API only allows refresh tokens to be used once. When you request a new 
 access token using the refresh token, a new refresh token will be returned. The new refresh token
